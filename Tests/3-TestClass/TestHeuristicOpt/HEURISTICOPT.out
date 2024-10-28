@@ -1,0 +1,4 @@
+Test minimal moves from corner position - correct
+Test central position with more potential moves - correct
+Test other central position - correct
+Test on near-edge position - correct

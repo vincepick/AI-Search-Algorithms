@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CheckOutput">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Tests/1-INFO-TESTS/19-ALT-VERBOSE/CheckOutput.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

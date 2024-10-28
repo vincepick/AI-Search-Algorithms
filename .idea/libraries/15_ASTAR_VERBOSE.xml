@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="15-ASTAR-VERBOSE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Tests/1-INFO-TESTS/15-ASTAR-VERBOSE/CheckOutput.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Tests/1-INFO-TESTS/15-ASTAR-VERBOSE/._CheckOutput.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
