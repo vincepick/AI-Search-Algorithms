@@ -20,18 +20,18 @@ For graphing, this program also relies on the MatPlotLib and Pandas Python libra
 To run the program, while in src directory enter a command of the form: 
 `java P1main <Algorithm> <D> <r,c> <coverage> [verbose or CSV]`
 ## Parameters
-<Algorithm>: Specifies the algorithm. Options are:
+*Algorithm*: Specifies the algorithm. Options are:
     AStar: A* Search Algorithm
     BestF: Best First Search Algorithm
     AStarOpt: A* Search with different heuristic
     BestFOpt: Best First Search with different heuristic
     Alt: Not implemented within this practical 
 
-<D>: Dimension of the grid.
+*D*: Dimension of the grid.
 
-<r,c>: Starting position as row and column (comma-separated).
+*r,c*: Starting position as row and column (comma-separated).
 
-<coverage>: Percentage of grid cells to cover (integer between 0-100).
+*coverage*: Percentage of grid cells to cover (integer between 0-100).
 
 [verbose]: Optional flag. Include this parameter to run in verbose mode
 
