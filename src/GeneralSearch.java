@@ -16,9 +16,6 @@ public abstract class GeneralSearch {
     public static final int NOT_FOUND = -1;
     public static final int NOT_TERMINATED = -100;
 
-    // TODO see if theres a better way to do this
-    // public static Node currentNode;
-
     /**
      * General Search Constructor for Every Algorithm
      * 
@@ -76,7 +73,6 @@ public abstract class GeneralSearch {
         // Checking if given an impossible input
         if (currentNode.getNumVisited() >= coverage) {
             results[0] = NOT_FOUND;
-            // Arrays.fill(results, NOT_FOU ND)
             return NOT_FOUND;
 
         }
@@ -84,7 +80,6 @@ public abstract class GeneralSearch {
         frontier.add(currentNode);
         // Keeping track of the number of nodes explored
         int nodesExplored = 1;
-        // Node currentNode = startNode;
 
         Runtime runtime = Runtime.getRuntime();
         runtime.gc(); // Suggest garbage collection to get a more accurate measurement
@@ -204,12 +199,10 @@ public abstract class GeneralSearch {
     public void addToFrontier(Node parentNode, List<Coordinate> possibleMoves) {
         // Creates nodes for moves known to be possible for better memory complexity
         for (Coordinate move : possibleMoves) {
-            // TODO can consider getting rid of this call manhattan, and have callmanhattan
-            // be something in the node then not store individual distance at all
-            int distance = calcManhattan(move, parentNode.getCoordinates()); // Distance for just this node
+
+            int distance = parentNode.getCoordinates().calcDistance(move); // Distance for just this node
             int existingDistance = parentNode.getExistingDistance() + distance; // Existing distance
             int numVisited = currentNode.getNumVisited() + 1; // Incrementing the number visited
-            // System.out.println("num viisted here is: " + numVisited);
 
             Node newNode = new Node(move, parentNode, existingDistance, numVisited, distance);
             // Setting to instance variable currentNode so node info can be accessed for
@@ -227,8 +220,8 @@ public abstract class GeneralSearch {
 
     // having this as a seperate class variable so moves could be changed later on
     private final static int[][] moves = {
-            { 3, 0 }, { -3, 0 }, { 0, 3 }, { 0, -3 },
-            { 2, 2 }, { 2, -2 }, { -2, 2 }, { -2, -2 }
+            { 3, 0 }, { -3, 0 }, { 0, 3 }, { 0, -3 }, // Moving horizontal/vertical
+            { 2, 2 }, { 2, -2 }, { -2, 2 }, { -2, -2 } // Moving diagonal
     };
 
     /**
@@ -250,19 +243,6 @@ public abstract class GeneralSearch {
         }
 
         return possibleMoves;
-    }
-
-    /**
-     * Calculates the Manhattan Distance
-     * 
-     * @param from Starting node
-     * @param to   End node
-     * @return The manhattan distance from start to end
-     */
-    public int calcManhattan(Coordinate from, Coordinate to) {
-        int dx = Math.abs(from.x() - to.x());
-        int dy = Math.abs(from.y() - to.y());
-        return dx + dy;
     }
 
     /**
@@ -301,11 +281,20 @@ public abstract class GeneralSearch {
         return false;
     }
 
+    /**
+     * 
+     * @return Keeping track of the node currently being examined/used in the search
+     */
     public Node getCurrentNode() {
         System.out.println("currentNode is" + currentNode.getCoordinates());
         return currentNode;
     }
 
+    /**
+     * Used for getting results to build the CSVs
+     * 
+     * @return results array
+     */
     public long[] getResults() {
         return results;
     }

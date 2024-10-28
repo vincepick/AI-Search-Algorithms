@@ -2,6 +2,14 @@ import java.util.List;
 
 class BestFOpt extends GeneralSearch {
 
+    /**
+     * 
+     * @param gridSize
+     * @param startNode
+     * @param coverage
+     * @param verbose
+     * @param time_limit
+     */
     public BestFOpt(int gridSize, String startNode, int coverage, boolean verbose, int time_limit) {
         super(gridSize, startNode, coverage, verbose, time_limit);
     }

@@ -41,7 +41,7 @@ public class TestManhattan {
             Coordinate to = (Coordinate) testCases[i][2];
             int expectedDistance = (int) testCases[i][3];
 
-            int calculatedDistance = search.calcManhattan(from, to);
+            int calculatedDistance = from.calcDistance(to);
 
             // Print results for each test case
 

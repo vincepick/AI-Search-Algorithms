@@ -1,6 +1,4 @@
-This readme outlines how to run the program within this practical 
-
-# Pre Requisites
+# Environment
 This program has only been tested on the lab machines, and that version of Java (Amazon Corretto 21) 
 Running it on other java versions may yield different results or not be supported. 
 

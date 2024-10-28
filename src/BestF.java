@@ -1,5 +1,13 @@
 class BestF extends GeneralSearch {
 
+    /**
+     * 
+     * @param gridSize
+     * @param startNode
+     * @param coverage
+     * @param verbose
+     * @param time_limit
+     */
     public BestF(int gridSize, String startNode, int coverage, boolean verbose, int time_limit) {
         super(gridSize, startNode, coverage, verbose, time_limit);
         // is not included in abstract class because may not necessarily be used within

@@ -11,13 +11,13 @@ class Alt extends GeneralSearch {
     // better for extensibility
     @Override
     protected int calculateHeuristic() {
-        return 3 * (coverage - currentNode.getNumVisited());
+        // Testing for no heurstic whatsoever
+        return 1;
     }
 
-    // can i overload this or anything to not have it be scuffed
     @Override
     protected int calcCost(int heuristic, int totalPathCost) {
-        return heuristic + totalPathCost;
+        return heuristic;
     }
 
 }

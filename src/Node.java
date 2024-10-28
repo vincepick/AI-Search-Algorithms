@@ -8,11 +8,12 @@ public class Node {
     // use record, fields in it are immutable by default
     private final Coordinate coordinates;
     private final Node parent;
-    private int cost;
-    // TODO is this redundant, existing visited and numvisited
     private final int existingVisited;
     private final int numVisited;
     private final int totalCost;
+
+    // updated with a setter
+    private int cost;
 
     /**
      * Constructor for each node, each node represents a move in the search
@@ -32,14 +33,6 @@ public class Node {
         this.existingVisited = existingVisited;
         this.totalCost = totalCost;
     }
-
-    // @Override
-    // /**
-    // * Compared to another node
-    // */
-    // public int compareTo(Node other) {
-    // return Integer.compare(this.getCost(), other.getCost());
-    // }
 
     public void setCost(int cost) {
         this.cost = cost;
@@ -73,7 +66,7 @@ public class Node {
     /**
      * The cost
      * 
-     * @return
+     * @return Cost
      */
     public int getCost() {
         return cost;
@@ -96,19 +89,8 @@ public class Node {
     }
 
     /**
-     * 
-     * // * @param node Check if cordinates are equal with another node
-     * // * @return boolean value for it it is equal or not
-     * //
+     * For printing in verbose mode
      */
-    // public boolean cordEquals(Node node) {
-
-    // if (this.coordinates == node.coordinates) {
-    // return true;
-    // }
-    // return false;
-    // }
-
     public String toString() {
         String nodeString = (coordinates.toString() + ":" + cost);
         return nodeString;

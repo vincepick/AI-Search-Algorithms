@@ -31,10 +31,11 @@ public class P1main {
 			System.exit(1);
 		}
 
-		// process input examples
+		// Process input examples
 		boolean verbose = false;
 		boolean csv = false;
 
+		// Choosing output mode
 		if (args[args.length - 1].equals("verbose")) {
 			verbose = true;
 		} else if (args[args.length - 1].startsWith("CSV")) {
@@ -49,6 +50,7 @@ public class P1main {
 		// run your search algorithm
 		int path_cost = runSearch(algo, d, start, coverage, verbose, time_limit);
 
+		// Printing for csv mode
 		if (csv) {
 			System.out.print(d + "," + coverage + "," + start);
 			for (int i = 0; i < results.length; i++) {
@@ -56,7 +58,7 @@ public class P1main {
 			}
 			System.out.println();
 
-		} else {
+		} else { // Printing path cost
 			System.out.println(path_cost);
 		}
 	}
@@ -64,21 +66,19 @@ public class P1main {
 	/**
 	 * Method to call a specific search algorithm
 	 * 
-	 * @param algo
-	 * @param d
-	 * @param start
-	 * @param coverage
-	 * @param verbose
-	 * @param time_limit
+	 * @param algo       choice of algorithm
+	 * @param d          size of board
+	 * @param start      starting coordinate
+	 * @param coverage   required coverage
+	 * @param verbose    verbose toggle
+	 * @param time_limit amount of time to run for
 	 * @return
 	 */
 	private static int runSearch(String algo, int d, String start, int coverage, boolean verbose, int time_limit) {
 		int temp;
 		switch (algo) {
 			// AStar|BestF|Alt|AStarOpt|BestFOpt>
-
 			case "BestF": // run BestF
-				// return NOT_IMPLEMENTED;
 				BestF bestfSearch = new BestF(d, start, coverage, verbose, time_limit);
 				temp = bestfSearch.search();
 				results = bestfSearch.getResults();
@@ -99,11 +99,10 @@ public class P1main {
 				results = bestFOpt.getResults();
 				return temp;
 			case "Alt": // run alt
-				return NOT_IMPLEMENTED;
-			// Alt altSearch = new Alt(d, start, coverage, verbose, time_limit);
-			// temp = altSearch.search();
-			// results = altSearch.getResults();
-			// return temp;
+				Alt altSearch = new Alt(d, start, coverage, verbose, time_limit);
+				temp = altSearch.search();
+				results = altSearch.getResults();
+				return temp;
 		}
 
 		return NOT_IMPLEMENTED;
