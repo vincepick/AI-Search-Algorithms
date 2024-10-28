@@ -20,6 +20,7 @@ For graphing, this program also relies on the MatPlotLib and Pandas Python libra
 To run the program, while in src directory enter a command of the form: 
 `java P1main <Algorithm> <D> <r,c> <coverage> [verbose or CSV]`
 ## Parameters
+
 *Algorithm*: Specifies the algorithm. Options are:
     AStar: A* Search Algorithm
     BestF: Best First Search Algorithm
