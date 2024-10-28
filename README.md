@@ -19,6 +19,42 @@ For graphing, this program also relies on the MatPlotLib and Pandas Python libra
 # Running the program 
 To run the program, while in src directory enter a command of the form: 
 `java P1main <Algorithm> <D> <r,c> <coverage> [verbose or CSV]`
+## Parameters
+<Algorithm>: Specifies the algorithm. Options are:
+    AStar: A* Search Algorithm
+    BestF: Best First Search Algorithm
+    AStarOpt: A* Search with different heuristic
+    BestFOpt: Best First Search with different heuristic
+    Alt: Not implemented within this practical 
+
+<D>: Dimension of the grid.
+
+<r,c>: Starting position as row and column (comma-separated).
+
+<coverage>: Percentage of grid cells to cover (integer between 0-100).
+
+[verbose]: Optional flag. Include this parameter to run in verbose mode
+
+[CSV]: Optional flag. Include this parameter to run to output additional results in CSV format
+
+## Running Modes
+The program has three modes which are 
+### Default
+Only outputs the path cost
+`java P1main <Algorithm> <D> <r,c> <coverage>`
+### Verbose
+Provides verbose output, as outlined in the specification
+`java P1main <Algorithm> <D> <r,c> <coverage> verbose`
+### CSV
+Provides full results in the form of comma seperated values, typically used for generating CSV files
+`java P1main <Algorithm> <D> <r,c> <coverage> CSV`
+## Special Outputs
+Path cost has numerous special output options which have different meanings. 
+    -1   : no path exists
+    -100 : algorithm times out (within 30 seconds)
+    -200 : if selected algorithm was not implemented
+
+
 
 # Running the stacscheck tests
 While in project directory 
@@ -29,6 +65,8 @@ Scripts both for generating graphs and collecting/saving data must be ran while 
 `python generateGraphsExampleScript` ran in `scripts/generating/`
 or
 `python generateDataExampleScript` ran in `scripts/graphing/`
+
+
 
 
 
