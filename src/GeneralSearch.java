@@ -36,7 +36,7 @@ public abstract class GeneralSearch {
         int y = Integer.parseInt(coordinatePair[1].trim());
 
         this.currentNode = Node.createInitialNode(x, y);
-        int initialCost = calcCost(calculateHeuristic(), 0);
+        int initialCost = calcCost(calcHeuristic(), 0);
         currentNode.setCost(initialCost);
 
         // Comparator is based on the cost, which is specific to each Algorithm
@@ -51,7 +51,7 @@ public abstract class GeneralSearch {
      * 
      * @return The heuristic for a given totalLength
      */
-    protected abstract int calculateHeuristic();
+    protected abstract int calcHeuristic();
 
     /**
      * Abstract method for returning cost specific to each algorithm
@@ -133,12 +133,13 @@ public abstract class GeneralSearch {
      * @return An int, the total cost of the path
      */
     private int calculateResult(Node node, int nodesExplored) {
-        int totalCost = 0;
+        int totalCost = node.getExistingDistance();
         int numOfNodesInPath = node.getNumVisited();
         // Stringbuilder used for the final path, only created in verbose mode
         StringBuilder pathString = verbose ? new StringBuilder() : null;
         while (node != null && node.getParent() != null) {
-            totalCost += node.getTotalCost();
+            // TODO confirm removing this
+            // totalCost += node.getDistance();
             // Coordinates inserted at the beggining for correct final output order
             pathString = verbose ? pathString.insert(0, node.getCoordinates().toString()) : pathString;
             node = node.getParent();
@@ -146,7 +147,6 @@ public abstract class GeneralSearch {
 
         if (verbose) {
             pathString.insert(0, node.getCoordinates().toString());
-            // TODO check this should be numofnodesinpath
             printVerboseInfo(nodesExplored, pathString, numOfNodesInPath);
         }
         results[2] = nodesExplored;
@@ -204,11 +204,11 @@ public abstract class GeneralSearch {
             int existingDistance = parentNode.getExistingDistance() + distance; // Existing distance
             int numVisited = currentNode.getNumVisited() + 1; // Incrementing the number visited
 
-            Node newNode = new Node(move, parentNode, existingDistance, numVisited, distance);
+            Node newNode = new Node(move, parentNode, existingDistance, numVisited);
             // Setting to instance variable currentNode so node info can be accessed for
             // this particular node when calculating the heuristic if necessary
             currentNode = newNode;
-            int heuristic = calculateHeuristic(); // Calculating the heuristic
+            int heuristic = calcHeuristic(); // Calculating the heuristic
             int nodeCost = calcCost(heuristic, existingDistance); // Calculating the cost for this individual node
             newNode.setCost(nodeCost);
             frontier.add(newNode);
@@ -250,7 +250,7 @@ public abstract class GeneralSearch {
      * 
      * @param x Clumn of potential move
      * @param y Row of potential move
-     * @return A boolean for if that move is within the board or not
+     * @return True if that move is within grid bounds, false otherwise
      */
     public boolean moveIsPossible(int x, int y) {
         // Checks that

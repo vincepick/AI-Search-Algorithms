@@ -4,7 +4,7 @@ import argparse
 import random
 
 # Algorithms and their corresponding output file names
-algorithms = ["BestF", "AStar", "BestFOpt", "AStarOpt"]
+algorithms = ["BestF", "AStar", "BestFOpt", "AStarOpt", "Alt"]
 
 # Set up command-line argument parser
 parser = argparse.ArgumentParser()

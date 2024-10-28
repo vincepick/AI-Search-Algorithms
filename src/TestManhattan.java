@@ -5,10 +5,10 @@ public class TestManhattan {
     }
 
     public static void testManhattanDistance() {
-        // Dummy values, none matter while teseting the manhattan distance
+        // Dummy values, none matter while testing the manhattan distance
         GeneralSearch search = new GeneralSearch(0, "0,0", 0, false, 0) {
             @Override
-            protected int calculateHeuristic() {
+            protected int calcHeuristic() {
                 return 0; // Isnt being tested here, dummy value
             }
 

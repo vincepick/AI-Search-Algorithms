@@ -15,17 +15,17 @@ class AStarOpt extends GeneralSearch {
     }
 
     /**
-     * Calculate Heuristic
+     * Calculate Heuristic, using Warnsdorf's rule
      */
     @Override
-    protected int calculateHeuristic() {
+    protected int calcHeuristic() {
         // Checking the possible moves of the current node
         List<Coordinate> possibleMoves = findPossibleMoves(currentNode.getCoordinates());
         return possibleMoves.size();
     }
 
     /**
-     * Calculate Cost
+     * Calculate Cost, adding heuristic and totalPathCost for A*
      */
     @Override
     protected int calcCost(int heuristic, int totalPathCost) {

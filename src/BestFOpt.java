@@ -14,15 +14,18 @@ class BestFOpt extends GeneralSearch {
         super(gridSize, startNode, coverage, verbose, time_limit);
     }
 
-    // needs to be an abstract function so that I can make an alternate heuristic
-    // for other functions where necessary
-    // better for extensibility
+    /**
+     * Calculating heuristic using Warnsdorf's rule
+     */
     @Override
-    protected int calculateHeuristic() {
+    protected int calcHeuristic() {
         List<Coordinate> possibleMoves = findPossibleMoves(currentNode.getCoordinates());
         return possibleMoves.size();
     }
 
+    /**
+     * Cost for BestF is just the heuristic
+     */
     @Override
     protected int calcCost(int heuristic, int totalPathCost) {
         return heuristic;

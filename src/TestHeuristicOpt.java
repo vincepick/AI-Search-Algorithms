@@ -31,11 +31,11 @@ public class TestHeuristicOpt {
             int y = Integer.parseInt(cordString[1].trim());
             Coordinate coordinate = new Coordinate(x, y);
 
-            // set current node to be used in calculateHeuristic method
-            search.currentNode = new Node(coordinate, null, 0, initialVisited, 0);
+            // set current node to be used in calcHeuristic method
+            search.currentNode = new Node(coordinate, null, 0, initialVisited);
 
             // Calculate the heuristic and compare with the expected result
-            int calculatedHeuristic = search.calculateHeuristic();
+            int calculatedHeuristic = search.calcHeuristic();
 
             // print results for each test case
             if (calculatedHeuristic == expectedHeuristic) {

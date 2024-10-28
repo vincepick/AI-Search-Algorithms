@@ -1,39 +1,48 @@
-// a class for the nodes involved in each search algorithm
-// import java.util.Objects;
-
-// make implement it a  omprable, thats how the priority queue sorts them, need to specify to sort them by heuristic 
-// consider switching this from <Coordinate> not sure if that is
 public class Node {
 
-    // use record, fields in it are immutable by default
-    private final Coordinate coordinates;
-    private final Node parent;
-    private final int existingVisited;
-    private final int numVisited;
-    private final int totalCost;
+    // Use record class, fields in it are immutable by default
+    private final Coordinate coordinates; // The location of this nodes move, to avoid duplicate nodes in same
+                                          // path
+    private final Node parent; // Referencing this nodes parent
+    private final int existingDistance; // The distance to reach this node, used for A star cost
+    private final int numVisited; // Necessary for checking if coverage has been reached
+    // TODO remove distance
+    // private final int distance; // The distance traveled from this nodes parent
+    // to this node, used for returning
+    // final cost, the manhattan distance traveled by the pawn to reach the required
+    // coverage.
 
     // updated with a setter
-    private int cost;
+    private int cost; // The cost, used within the priority queue to pick the next node
 
     /**
      * Constructor for each node, each node represents a move in the search
      * 
-     * @param coordinates     The coordinates of this node
-     * @param parent          The parent of this node
-     * @param cost            The cost of this node
-     * @param existingVisited The length of the path leading up to this node (cost)
-     * @param numVisited      The number of nodes visisted at hte point of this node
-     * @param totalCost       The totalCost traveled to get to this node, TODO what
-     *                        is total cost actually
+     * @param coordinates      The coordinates of this node
+     * @param parent           The parent of this node
+     * @param cost             The cost of this node
+     * @param existingDistance The length of the path leading up to this node (cost)
+     * @param numVisited       The number of nodes visisted at hte point of this
+     *                         node
+     *                         TODO remove distance
+     * @param distance         The distance traveled to get to this node from the
+     *                         last node
      */
-    public Node(Coordinate coordinates, Node parent, int existingVisited, int numVisited, int totalCost) {
+    // TODO remove distance
+    public Node(Coordinate coordinates, Node parent, int existingDistance, int numVisited) {
         this.coordinates = coordinates;
         this.numVisited = numVisited;
         this.parent = parent;
-        this.existingVisited = existingVisited;
-        this.totalCost = totalCost;
+        this.existingDistance = existingDistance;
+        // TODO remove distance
+        // this.distance = distance;
     }
 
+    /**
+     * Used to set the cost to reach this node from the last node
+     * 
+     * @param cost
+     */
     public void setCost(int cost) {
         this.cost = cost;
     }
@@ -57,11 +66,11 @@ public class Node {
 
     /**
      * 
-     * @return The totalCost
+     * @return The distance
      */
-    public int getTotalCost() {
-        return totalCost;
-    }
+    // public int getDistance() {
+    // return distance;
+    // }
 
     /**
      * The cost
@@ -77,7 +86,7 @@ public class Node {
      * @return The existingVisited
      */
     public int getExistingDistance() {
-        return existingVisited;
+        return existingDistance;
     }
 
     /**
@@ -106,7 +115,7 @@ public class Node {
      */
     public static Node createInitialNode(int x, int y) {
         // Initial node will always have certain values, such as existingVisited 0
-        return new Node(new Coordinate(x, y), null, 0, 1, 0);
+        return new Node(new Coordinate(x, y), null, 0, 1);
     }
 
 }

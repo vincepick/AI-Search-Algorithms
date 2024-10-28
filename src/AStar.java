@@ -1,5 +1,13 @@
 class AStar extends GeneralSearch {
 
+    /**
+     * 
+     * @param gridSize
+     * @param startNode
+     * @param coverage
+     * @param verbose
+     * @param time_limit
+     */
     public AStar(int gridSize, String startNode, int coverage, boolean verbose, int time_limit) {
         super(gridSize, startNode, coverage, verbose, time_limit);
     }
@@ -8,11 +16,13 @@ class AStar extends GeneralSearch {
      * Using heuristic provided in the spec
      */
     @Override
-    protected int calculateHeuristic() {
+    protected int calcHeuristic() {
         return 3 * (coverage - currentNode.getNumVisited());
     }
 
-    // can i overload this or anything to not have it be scuffed
+    /**
+     * Heuristic + path cost for A star implementation
+     */
     @Override
     protected int calcCost(int heuristic, int totalPathCost) {
         return heuristic + totalPathCost;

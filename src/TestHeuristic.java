@@ -31,10 +31,10 @@ public class TestHeuristic {
             Coordinate coordinate = new Coordinate(x, y);
 
             // set currentNode for heuristic() to be called upon
-            search.currentNode = new Node(coordinate, null, 0, initialVisited, 0);
+            search.currentNode = new Node(coordinate, null, 0, initialVisited);
 
             // Calculate the heuristic and compare with the expected result
-            int calculatedHeuristic = search.calculateHeuristic();
+            int calculatedHeuristic = search.calcHeuristic();
 
             // Print results for each test case
             if (calculatedHeuristic == expectedHeuristic) {
