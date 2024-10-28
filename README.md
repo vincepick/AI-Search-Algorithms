@@ -22,6 +22,7 @@ To run the program, while in src directory enter a command of the form:
 ## Parameters
 
 *Algorithm*: Specifies the algorithm. Options are:
+
     AStar: A* Search Algorithm
     BestF: Best First Search Algorithm
     AStarOpt: A* Search with different heuristic
