@@ -11,7 +11,7 @@ public abstract class GeneralSearch {
     protected final int coverage;
     protected final boolean verbose;
     private final int timeLimit;
-    private long[] results = new long[5];
+    private long[] results = new long[4];
     private long timeElapsed;
     public static final int NOT_FOUND = -1;
     public static final int NOT_TERMINATED = -100;
@@ -106,7 +106,7 @@ public abstract class GeneralSearch {
 
                 runtime.gc(); // Optional: run garbage collection again for a more stable reading
                 long memoryAfter = runtime.totalMemory() - runtime.freeMemory();
-                results[4] = (memoryAfter - memoryBefore);
+                results[3] = (memoryAfter - memoryBefore);
                 return calculateResult(currentNode, nodesExplored);
             }
 
@@ -151,7 +151,6 @@ public abstract class GeneralSearch {
         }
         results[2] = nodesExplored;
         results[0] = totalCost;
-        results[3] = numOfNodesInPath;
         return totalCost;
     }
 

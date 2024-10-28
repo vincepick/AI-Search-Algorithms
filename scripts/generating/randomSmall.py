@@ -17,7 +17,7 @@ num_runs = args.num_runs
 # Directory paths for code base and data
 source_dir = "../src"
 data_dir = f"../Data/{args.run_dir}"
-header = "boardsize,coverage,startx,starty,pathcost,executiontime,nodes_explored,path_length,memory_usage\n"
+header = "boardsize,coverage,startx,starty,pathcost,executiontime,nodes_explored,memory_usage\n"
 
 os.makedirs(data_dir, exist_ok=True)
 
