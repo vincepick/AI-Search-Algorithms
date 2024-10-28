@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d97efdb4-1c4a-4318-b3e4-a9c41ac387d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/AStar.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/AStar.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/AStarOpt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/AStarOpt.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/AStarOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/AStar_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/Alt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/Alt.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/BestF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/BestF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/BestFOpt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/BestFOpt.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/BestFOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/findTimeoutRandom100x3nolength/BestF_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/otherRandomResults/AStar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/otherRandomResults/AStarOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/otherRandomResults/AStarOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/otherRandomResults/AStar_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/otherRandomResults/BestF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/otherRandomResults/BestFOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/otherRandomResults/BestFOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/otherRandomResults/BestF_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/random:D/AStar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/random:D/AStarOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/random:D/AStarOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/random:D/AStar_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/random:D/BestF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/random:D/BestFOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/random:D/BestFOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/random:D/BestF_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small/AStar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small/AStarOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small/AStarOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small/AStar_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small/BestF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small/BestFOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small/BestFOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small/BestF_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small1k/AStar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small1k/AStarOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small1k/AStarOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small1k/AStar_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small1k/BestF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small1k/BestFOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small1k/BestFOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/small1k/BestF_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/thirdRandom/AStar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/thirdRandom/AStarOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/thirdRandom/AStarOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/thirdRandom/AStar_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/thirdRandom/BestF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/thirdRandom/BestFOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/thirdRandom/BestFOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/thirdRandom/BestF_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandom/AStar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandom/AStarOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandom/AStarOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandom/AStar_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandom/BestF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandom/BestFOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandom/BestFOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandom/BestF_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandom100/BestF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard/AStar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard/AStarOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard/AStarOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard/AStar_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard/BestF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard/BestFOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard/BestFOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard/BestF_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard100/AStar.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard100/AStarOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard100/AStarOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard100/AStar_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard100/BestF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard100/BestFOpt.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard100/BestFOpt_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard100/BestF_cleaned_averaged.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/timeoutRandomBigBoard100x2nolength/BestF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/findTimeout/algorithm_performance_executiontime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/findTimeout/algorithm_performance_memory_usage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/findTimeout/algorithm_performance_nodes_explored.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/findTimeout/algorithm_performance_path_length.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/findTimeout/algorithm_performance_pathcost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/findTimeoutRandom100x3nolength/algorithm_performance_executiontime.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphs/findTimeoutRandom100x3nolength/algorithm_performance_executiontime.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/findTimeoutRandom100x3nolength/algorithm_performance_memory_usage.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphs/findTimeoutRandom100x3nolength/algorithm_performance_memory_usage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/findTimeoutRandom100x3nolength/algorithm_performance_nodes_explored.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphs/findTimeoutRandom100x3nolength/algorithm_performance_nodes_explored.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/findTimeoutRandom100x3nolength/algorithm_performance_path_length.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/findTimeoutRandom100x3nolength/algorithm_performance_pathcost.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphs/findTimeoutRandom100x3nolength/algorithm_performance_pathcost.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/otherRandomResults/algorithm_performance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/random:D/algorithm_performance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/small/algorithm_performance_executiontime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/small/algorithm_performance_memory_usage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/small/algorithm_performance_nodes_explored.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/small/algorithm_performance_path_length.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/small/algorithm_performance_pathcost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/small1k/algorithm_performance_executiontime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/small1k/algorithm_performance_memory_usage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/small1k/algorithm_performance_nodes_explored.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/small1k/algorithm_performance_path_length.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/small1k/algorithm_performance_pathcost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/thirdRandom/algorithm_performance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandom/algorithm_performance_executiontime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandom/algorithm_performance_memory_usage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandom/algorithm_performance_nodes_explored.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandom/algorithm_performance_path_length.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandom/algorithm_performance_pathcost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandomBigBoard/algorithm_performance_executiontime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandomBigBoard/algorithm_performance_memory_usage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandomBigBoard/algorithm_performance_nodes_explored.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandomBigBoard/algorithm_performance_path_length.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandomBigBoard/algorithm_performance_pathcost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandomBigBoard100/algorithm_performance_executiontime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandomBigBoard100/algorithm_performance_memory_usage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandomBigBoard100/algorithm_performance_nodes_explored.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandomBigBoard100/algorithm_performance_path_length.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/timeoutRandomBigBoard100/algorithm_performance_pathcost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/generating/findTimeout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/generating/findTimeoutRandom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/generating/fullCoverage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/generating/generateGeneralOld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/generating/oneHuge.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/generating/randomSmall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/graphing/random1-5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GeneralSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeneralSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GeneralSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeneralSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/P1main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/P1main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/P1main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/P1main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2o23dEcaVcBOFch2Q3ZKQGqw1ao" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vap2/Documents/P1-Search&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d97efdb4-1c4a-4318-b3e4-a9c41ac387d3" name="Changes" comment="" />
+      <created>1730053928542</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730053928542</updated>
+      <workItem from="1730053929546" duration="1504000" />
+      <workItem from="1730126111624" duration="616000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

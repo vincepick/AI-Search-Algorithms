@@ -87,10 +87,12 @@ public abstract class GeneralSearch {
 
         // While loop to continue touring until frontier is empty
         while (!frontier.isEmpty()) {
-            if (((System.currentTimeMillis() - startTime) / 1000) > timeLimit) {
-                // for if the program times out
-                results[0] = NOT_TERMINATED;
-                return NOT_TERMINATED;
+            if (timeLimit > 0) {
+                if (((System.currentTimeMillis() - startTime) / 1000) > timeLimit) {
+                    // for if the program times out
+                    results[0] = NOT_TERMINATED;
+                    return NOT_TERMINATED;
+                }
             }
 
             if (verbose) { // Conditional to print out the frontier if in verbose mode
@@ -202,7 +204,7 @@ public abstract class GeneralSearch {
             int numVisited = currentNode.getNumVisited() + 1; // Incrementing the number visited
 
             Node newNode = Node.createNode(move, parentNode, existingDistance, numVisited);
-            
+
             // Setting to instance variable currentNode so node info can be accessed for
             // this particular node when calculating the heuristic if necessary
             currentNode = newNode;

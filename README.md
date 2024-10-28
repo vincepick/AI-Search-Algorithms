@@ -16,7 +16,7 @@ For generating graphs, this program also relies on the MatPlotLib and Pandas Pyt
 
 # Running the program 
 To run the program, while in src directory enter a command of the form: 
-`java P1main <Algorithm> <D> <r,c> <coverage> [verbose or CSV]`
+`java P1main <Algorithm> <D> <r,c> <coverage> [verbose or CSV] [Limit:<yourtimelimit>]`
 ## Parameters
 
 *Algorithm*: Specifies the algorithm. Options are:
@@ -35,6 +35,8 @@ To run the program, while in src directory enter a command of the form:
 [verbose]: Optional flag. Include this parameter to run in verbose mode
 
 [CSV]: Optional flag. Include this parameter to run to output additional results in CSV format
+
+[Time Limit]: Optional flag. Include this parameter to set a custom time limit for the program to time out in seconds. Any value under 0 is interpreted as no time limit. *Warning, making infinite time limits cause the algorithms, particularly AStar, to run out of memory and crash*. 
 
 ## Running Modes
 The program has three modes which are 

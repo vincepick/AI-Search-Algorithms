@@ -29,7 +29,7 @@ public class P1main {
 		if (args.length < 4) {
 			System.out
 					.println(
-							"usage: java P1main <AStar|BestF|Alt|AStarOpt|BestFOpt> <D> <r,c> <coverage> <CSV or verbose>");
+							"usage: java P1main <AStar|BestF|Alt|AStarOpt|BestFOpt> <D> <r,c> <coverage> <(Optional Flag) CSV or verbose> <(Optional Flag) Timelimit>");
 			System.exit(1);
 		}
 
@@ -38,17 +38,22 @@ public class P1main {
 		boolean csv = false;
 
 		// Choosing output mode
-		if (args[args.length - 1].equals("verbose")) {
+		if (args[args.length - 1].equals("verbose") || args[args.length - 2].equals("verbose")) {
 			verbose = true;
-		} else if (args[args.length - 1].startsWith("CSV")) {
+		}
+		if (args[args.length - 1].startsWith("CSV") || args[args.length - 2].startsWith("CSV")) {
 			csv = true;
+		}
+		int time_limit = 30; // run at most for 30s
+		if (args[args.length - 1].startsWith("Limit:")) {
+			time_limit = Integer.parseInt(args[args.length - 1].substring(6).trim());
 		}
 
 		String algo = args[0];
 		int d = Integer.parseInt(args[1]);
 		String start = args[2];
 		int coverage = Math.round(d * d * Integer.parseInt(args[3]) / 100);
-		int time_limit = 30; // run at most for 30s
+
 		// run your search algorithm
 		int path_cost = runSearch(algo, d, start, coverage, verbose, time_limit);
 

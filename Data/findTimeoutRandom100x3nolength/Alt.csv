@@ -1,4 +1,4 @@
-boardsize,coverage,startx,starty,pathcost,executiontime,nodes_explored,path_length,memory_usage
+boardsize,coverage,startx,starty,pathcost,executiontime,nodes_explored,memory_usage
 1,0,0,0,-1,0,0,0
 1,0,0,0,-1,0,0,0
 1,0,0,0,-1,0,0,0
