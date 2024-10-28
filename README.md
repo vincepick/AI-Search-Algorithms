@@ -1,17 +1,17 @@
 # Environment
-This program has only been tested on the lab machines, and that version of Java (Amazon Corretto 21) 
+This program has only been tested on the lab machines, and the version of Java installed on those machines(Amazon Corretto 21).
 Running it on other java versions may yield different results or not be supported. 
 
-For graphing, this program also relies on the MatPlotLib and Pandas Python libraries. 
+For generating graphs, this program also relies on the MatPlotLib and Pandas Python libraries. 
 
 # Directory Structure
 
 - **`src/`**: Contains all source files, including `P1main.java`.
 - **`Tests/`**: Stacscheck automatic testing located within tests directory.
-- **`scripts/generating/`**: Contains scripts for generating data and saving to CSV using the program.
-- **`scripts/graphing/`**: Contains scripts for generating graphs from existing CSV files in `Data/`.
+- **`Scripts/generating/`**: Contains scripts for generating data and saving to CSV using the program.
+- **`Scripts/graphing/`**: Contains scripts for generating graphs from existing CSV files in `Data/`.
 - **`Data/`**: Contains Data which can be used to make graphs.
-- **`Graphs/`**: Contains graphs generated off the CSV data in `Data/`
+- **`Graphs/`**: Contains graphs generated off the CSV data in `Data/` by the scripts in `Scripts/graphing/`.
 
 
 # Running the program 
@@ -48,15 +48,14 @@ Provides verbose output, as outlined in the specification
 Provides full results in the form of comma seperated values, typically used for generating CSV files
 `java P1main <Algorithm> <D> <r,c> <coverage> CSV`
 ## Special Outputs
-Path cost has numerous special output options which have different meanings. 
-    -1   : no path exists
-    -100 : algorithm times out (within 30 seconds)
-    -200 : if selected algorithm was not implemented
-
+The path cost output has numerous special output options which have different meanings. 
+    -1   : No path exists
+    -100 : Algorithm times out (was taking over 30 seconds)
+    -200 : If selected algorithm was not implemented
 
 
 # Running the stacscheck tests
-While in project directory 
+While in `P1-SEARCH` directory run:
 `stacscheck Tests`
 
 # Running scripts

@@ -4,6 +4,9 @@ public class TestManhattan {
         testManhattanDistance();
     }
 
+    /**
+     * Method for testing ManhattanDistance
+     */
     public static void testManhattanDistance() {
         // Dummy values, none matter while testing the manhattan distance
         GeneralSearch search = new GeneralSearch(0, "0,0", 0, false, 0) {
@@ -19,7 +22,7 @@ public class TestManhattan {
         };
 
         // Define test cases with coordinates and expected results
-        // Expected results achieved with:
+        // Expected results calculated with:
         // https://www.omnicalculator.com/math/manhattan-distance
         Object[][] testCases = {
                 { "manhattan distance with positive values", new Coordinate(1, 2), new Coordinate(4, 6), 7 },
@@ -49,7 +52,7 @@ public class TestManhattan {
                 System.out.println(testCase + testName + " - correct");
             } else {
                 System.out.println(
-                        testCase + testName + " - incorrect: expected " + expectedDistance + " but got "
+                        testCase + testName + " - wrong: expected " + expectedDistance + " but got "
                                 + calculatedDistance);
             }
         }

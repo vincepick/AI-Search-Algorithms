@@ -5,8 +5,11 @@ public class TestHeuristicOpt {
         testHeuristicOpt();
     }
 
+    /**
+     * Test heuristic calculation for using Warnsdorf's rule
+     */
     public static void testHeuristicOpt() {
-        // make with dummy values, do not impact heuristic
+        // make with dummy values, do not impact heuristic anyway
         BestFOpt search = new BestFOpt(12, "0,0", 64, false, 1000);
 
         // Define test cases with different positions and expected heuristic results
@@ -42,7 +45,7 @@ public class TestHeuristicOpt {
                 System.out.println(testCaseName + " - correct");
             } else {
                 System.out.println(
-                        testCaseName + " - incorrect: expected " + expectedHeuristic + " but got "
+                        testCaseName + " - wrong: expected " + expectedHeuristic + " but got "
                                 + calculatedHeuristic);
             }
         }

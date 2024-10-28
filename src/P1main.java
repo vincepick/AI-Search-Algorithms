@@ -15,6 +15,8 @@ public class P1main {
 	public static final int NOT_IMPLEMENTED = -200;
 	public static final int NOT_FOUND = -1;
 	public static final int NOT_TERMINATED = -100;
+
+	// Used for detailed results for generating CSVs
 	private static long[] results;
 
 	/**
@@ -77,7 +79,7 @@ public class P1main {
 	private static int runSearch(String algo, int d, String start, int coverage, boolean verbose, int time_limit) {
 		int temp;
 		switch (algo) {
-			// AStar|BestF|Alt|AStarOpt|BestFOpt>
+			// Options for algorithm are AStar|BestF|Alt|AStarOpt|BestFOpt>
 			case "BestF": // run BestF
 				BestF bestfSearch = new BestF(d, start, coverage, verbose, time_limit);
 				temp = bestfSearch.search();
@@ -88,17 +90,17 @@ public class P1main {
 				temp = aStarSearch.search();
 				results = aStarSearch.getResults();
 				return temp;
-			case "AStarOpt": // run AStar with additional heuristic
+			case "AStarOpt": // run AStar with alternative heuristic
 				AStarOpt aStarOpt = new AStarOpt(d, start, coverage, verbose, time_limit);
 				temp = aStarOpt.search();
 				results = aStarOpt.getResults();
 				return temp;
-			case "BestFOpt": // run BestFOpt
+			case "BestFOpt": // run BestF with alternative heuristic
 				BestFOpt bestFOpt = new BestFOpt(d, start, coverage, verbose, time_limit);
 				temp = bestFOpt.search();
 				results = bestFOpt.getResults();
 				return temp;
-			case "Alt": // run alt
+			case "Alt": // run alternative search
 				Alt altSearch = new Alt(d, start, coverage, verbose, time_limit);
 				temp = altSearch.search();
 				results = altSearch.getResults();

@@ -138,8 +138,6 @@ public abstract class GeneralSearch {
         // Stringbuilder used for the final path, only created in verbose mode
         StringBuilder pathString = verbose ? new StringBuilder() : null;
         while (node != null && node.getParent() != null) {
-            // TODO confirm removing this
-            // totalCost += node.getDistance();
             // Coordinates inserted at the beggining for correct final output order
             pathString = verbose ? pathString.insert(0, node.getCoordinates().toString()) : pathString;
             node = node.getParent();
@@ -203,7 +201,8 @@ public abstract class GeneralSearch {
             int existingDistance = parentNode.getExistingDistance() + distance; // Existing distance
             int numVisited = currentNode.getNumVisited() + 1; // Incrementing the number visited
 
-            Node newNode = new Node(move, parentNode, existingDistance, numVisited);
+            Node newNode = Node.createNode(move, parentNode, existingDistance, numVisited);
+            
             // Setting to instance variable currentNode so node info can be accessed for
             // this particular node when calculating the heuristic if necessary
             currentNode = newNode;

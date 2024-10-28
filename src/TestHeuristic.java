@@ -4,8 +4,12 @@ public class TestHeuristic {
         testHeuristic();
     }
 
+    /**
+     * A method purely for testing correct heuristic calculations
+     * Results of this methods output are automatically verified through Stacscheck
+     */
     public static void testHeuristic() {
-        // make AStar with dummy values that do not impact the heuristic
+        // make AStar with dummy values, which do not impact heuristic calculations anyway
         AStar search = new AStar(8, "0,0", 64, false, 1000);
 
         // test cases with different positions and expected results
@@ -19,6 +23,7 @@ public class TestHeuristic {
         // Loop through each test case
         for (int i = 0; i < testCases.length; i++) {
             // get parameters from test case array
+            // need to cast because it is an array of type objects
             String testCaseName = (String) testCases[i][0];
             String startNode = (String) testCases[i][1];
             int initialVisited = (int) testCases[i][2];
@@ -36,12 +41,12 @@ public class TestHeuristic {
             // Calculate the heuristic and compare with the expected result
             int calculatedHeuristic = search.calcHeuristic();
 
-            // Print results for each test case
+            // print results for each test case
             if (calculatedHeuristic == expectedHeuristic) {
                 System.out.println(testCaseName + " - correct");
             } else {
                 System.out.println(
-                        testCaseName + " - incorrect: expected " + expectedHeuristic + " but got "
+                        testCaseName + " - wrong: expected " + expectedHeuristic + " but got "
                                 + calculatedHeuristic);
             }
         }

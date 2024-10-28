@@ -6,12 +6,6 @@ public class Node {
     private final Node parent; // Referencing this nodes parent
     private final int existingDistance; // The distance to reach this node, used for A star cost
     private final int numVisited; // Necessary for checking if coverage has been reached
-    // TODO remove distance
-    // private final int distance; // The distance traveled from this nodes parent
-    // to this node, used for returning
-    // final cost, the manhattan distance traveled by the pawn to reach the required
-    // coverage.
-
     // updated with a setter
     private int cost; // The cost, used within the priority queue to pick the next node
 
@@ -20,22 +14,15 @@ public class Node {
      * 
      * @param coordinates      The coordinates of this node
      * @param parent           The parent of this node
-     * @param cost             The cost of this node
      * @param existingDistance The length of the path leading up to this node (cost)
      * @param numVisited       The number of nodes visisted at hte point of this
      *                         node
-     *                         TODO remove distance
-     * @param distance         The distance traveled to get to this node from the
-     *                         last node
      */
-    // TODO remove distance
     public Node(Coordinate coordinates, Node parent, int existingDistance, int numVisited) {
         this.coordinates = coordinates;
         this.numVisited = numVisited;
         this.parent = parent;
         this.existingDistance = existingDistance;
-        // TODO remove distance
-        // this.distance = distance;
     }
 
     /**
@@ -63,14 +50,6 @@ public class Node {
     public Node getParent() {
         return parent;
     }
-
-    /**
-     * 
-     * @return The distance
-     */
-    // public int getDistance() {
-    // return distance;
-    // }
 
     /**
      * The cost
@@ -118,4 +97,17 @@ public class Node {
         return new Node(new Coordinate(x, y), null, 0, 1);
     }
 
+    /**
+     * Used to create a new node
+     * @param coordinates      The coordinates of this node
+     * @param parentNode       The parent of this node
+     * @param existingDistance The length of the path leading up to this node (cost)
+     * @param numVisited       The number of nodes visisted at hte point of this
+     *                         node
+     */
+    public static Node createNode(Coordinate coordinates, Node parentNode, int existingDistance, int numVisited){
+        return new Node(coordinates, parentNode, existingDistance, numVisited);
+    }
+
 }
+

@@ -2,16 +2,16 @@ class Alt extends GeneralSearch {
 
     /**
      * 
-     * @param gridSize
-     * @param startNode
-     * @param coverage
-     * @param verbose
-     * @param time_limit
+     * @param gridSize   Size of the Grid being explored
+     * @param startNode  The coordinates of the node from which the tour begins
+     * @param coverage   The number of nodes required in a path for the tour to be
+     *                   considered finished
+     * @param verbose    Boolean, weather verbose output is enabled
+     * @param time_limit The amount of time before the search times out
      */
     public Alt(int gridSize, String startNode, int coverage, boolean verbose, int time_limit) {
+        // Refering to superclass (parent) objects
         super(gridSize, startNode, coverage, verbose, time_limit);
-        // is not included in abstract class because may not necessarily be used within
-        // heuristic
     }
 
     // Overriding Function
