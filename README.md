@@ -25,9 +25,8 @@ To run the program, while in src directory enter a command of the form:
 
     AStar: A* Search Algorithm
     BestF: Best First Search Algorithm
-    AStarOpt: A* Search with different heuristic
-    BestFOpt: Best First Search with different heuristic
-    Alt: Not implemented within this practical 
+    AStarOpt: A* Search with Warnsdorf's rule as heuristic
+    BestFOpt: Best First Search with Warnsdorf's rule as heuristic
 
 *D*: Dimension of the grid.
 
