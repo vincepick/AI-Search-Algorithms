@@ -1,3 +1,6 @@
+# Useful Graphs
+![Alt text](Screenshot%202025-01-18%20at%201.13.34%E2%80%AFAM.png)
+
 # Environment
 This program has only been tested on the lab machines, and the version of Java installed on those machines(Amazon Corretto 21).
 Running it on other java versions may yield different results or not be supported. 
