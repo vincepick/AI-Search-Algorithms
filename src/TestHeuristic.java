@@ -12,7 +12,7 @@ public class TestHeuristic {
         // make AStar with dummy values, which do not impact heuristic calculations anyway
         AStar search = new AStar(8, "0,0", 64, false, 1000);
 
-        // test cases with different positions and expected results
+        // test cases with different positions and expected results, correct results calculated manually
         Object[][] testCases = {
                 { "Test minimal coverage remaining from initial position", "0,0", 1, 189 },
                 { "Test some nodes visited", "0,0", 20, 132 },

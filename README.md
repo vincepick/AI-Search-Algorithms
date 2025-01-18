@@ -36,7 +36,7 @@ To run the program, while in src directory enter a command of the form:
 
 [CSV]: Optional flag. Include this parameter to run to output additional results in CSV format
 
-[Time Limit]: Optional flag. Include this parameter to set a custom time limit for the program to time out in seconds. Any value under 0 is interpreted as no time limit. *Warning, making infinite time limits cause the algorithms, particularly AStar, to run out of memory and crash*. 
+[Time Limit]: Optional flag. Include this parameter to set a custom time limit for the program to time out in seconds. Any value under 0 is interpreted as no time limit. *Warning, making infinite time limits cause the algorithms, particularly AStar,/AStarOp to run out of memory and crash*. 
 
 ## Running Modes
 The program has three modes which are 

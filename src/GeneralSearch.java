@@ -82,7 +82,7 @@ public abstract class GeneralSearch {
         int nodesExplored = 1;
 
         Runtime runtime = Runtime.getRuntime();
-        runtime.gc(); // Suggest garbage collection to get a more accurate measurement
+        runtime.gc(); // Suggest garbage collection to try to get a more accurate measurement. JVM doesn't have to listen, which is why it is a suggestion. 
         long memoryBefore = runtime.totalMemory() - runtime.freeMemory();
 
         // While loop to continue touring until frontier is empty
@@ -106,7 +106,7 @@ public abstract class GeneralSearch {
                 timeElapsed = System.currentTimeMillis() - startTime;
                 results[1] = timeElapsed;
 
-                runtime.gc(); // Optional: run garbage collection again for a more stable reading
+                runtime.gc(); // Run garbage collection again for a (hopefully) more stable reading
                 long memoryAfter = runtime.totalMemory() - runtime.freeMemory();
                 results[3] = (memoryAfter - memoryBefore);
                 return calculateResult(currentNode, nodesExplored);
@@ -192,7 +192,7 @@ public abstract class GeneralSearch {
      * Method to add potential moves to the frontier, and create corresponding nodes
      * 
      * @param parentNode    The parent node of those being addded to the frontier at
-     *                      this oint
+     *                      this point
      * @param possibleMoves Potential moves from that node
      */
     public void addToFrontier(Node parentNode, List<Coordinate> possibleMoves) {

@@ -20,7 +20,7 @@ public class TestHeuristicOpt {
                 { "Test on near-edge position", "10,11", 1, 3 }
         };
 
-        // Loop through each test case
+        // loop through each test case
         for (int i = 0; i < testCases.length; i++) {
             // Extract test case parameters
             String testCaseName = (String) testCases[i][0];
